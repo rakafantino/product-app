@@ -3,7 +3,6 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 const FavoriteItem = ({ data, bgColor, handleRemoveFavorites }) => {
   const { thumbnail, title, id } = data;
-  console.log(id);
   return (
     <View style={styles.productItemOuterContainer}>
       <Pressable android_ripple={{ color: "#cad346" }} onPress={() => handleRemoveFavorites(id)} style={{ ...styles.pressableView, backgroundColor: bgColor }}>
